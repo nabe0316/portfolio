@@ -59,3 +59,4 @@ SNSの活用、Runteqコミュニティの活用、またアプリ内で感謝�
 * Bootstrap
 * PostgreSQL
 * Cloudinary API (画像のアップロード、保存、管理、最適化)
+
