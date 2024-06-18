@@ -1,0 +1,48 @@
+#0 building with "default" instance using docker driver
+
+#1 [web internal] load build definition from Dockerfile
+#1 transferring dockerfile: 1.09kB done
+#1 DONE 0.0s
+
+#2 [web internal] load .dockerignore
+#2 transferring context: 745B done
+#2 DONE 0.0s
+
+#3 [web internal] load metadata for docker.io/library/ruby:3.1.2
+#3 DONE 2.4s
+
+#4 [web 1/9] FROM docker.io/library/ruby:3.1.2@sha256:7681a3d37560dbe8ff7d0a38f3ce35971595426f0fe2f5709352d7f7a5679255
+#4 DONE 0.0s
+
+#5 [web internal] load build context
+#5 transferring context: 6.24kB 0.1s done
+#5 DONE 0.1s
+
+#6 [web 2/9] RUN apt-get update -qq && apt-get install -y build-essential libpq-dev nodejs && apt-get install -y vim
+#6 CACHED
+
+#7 [web 3/9] RUN curl -sL https://deb.nodesource.com/setup_18.x | bash -   && wget --quiet -O - /tmp/pubkey.gpg https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -   && echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list   && apt-get update -qq   && apt-get install -y nodejs yarn
+#7 CACHED
+
+#8 [web 4/9] WORKDIR /Runteq_portfolio
+#8 CACHED
+
+#9 [web 5/9] COPY Gemfile Gemfile.lock /Runteq_portfolio/
+#9 CACHED
+
+#10 [web 6/9] RUN bundle install
+#10 0.266 Bundler 2.3.7 is running, but your lockfile was generated with 2.4.22. Installing Bundler 2.4.22 and restarting using that version.
+#10 1.360 Fetching gem metadata from https://rubygems.org/.
+#10 1.406 Fetching bundler 2.4.22
+#10 1.567 Installing bundler 2.4.22
+#10 1.832 Your Ruby version is 3.1.2, but your Gemfile specified 3.2.2
+#10 ERROR: process "/bin/sh -c bundle install" did not complete successfully: exit code: 18
+------
+ > [web 6/9] RUN bundle install:
+0.266 Bundler 2.3.7 is running, but your lockfile was generated with 2.4.22. Installing Bundler 2.4.22 and restarting using that version.
+1.360 Fetching gem metadata from https://rubygems.org/.
+1.406 Fetching bundler 2.4.22
+1.567 Installing bundler 2.4.22
+1.832 Your Ruby version is 3.1.2, but your Gemfile specified 3.2.2
+------
+failed to solve: process "/bin/sh -c bundle install" did not complete successfully: exit code: 18
