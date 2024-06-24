@@ -63,6 +63,6 @@ SNSの活用、Runteqコミュニティの活用、またアプリ内で感謝�
 * Docker
 * Ruby on Rails
 * JavaScript
-* Bootstrap
+* Tailwind CSS
 * PostgreSQL
 * Cloudinary API (画像のアップロード、保存、管理、最適化)

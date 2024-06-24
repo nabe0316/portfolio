@@ -1,38 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>サービス概要</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>感謝の木 - トップページ</title>
+  <%= stylesheet_link_tag "application", media: "all" %>
 </head>
-<body>
-    <header>
-        <div class="header-container">
-            <h1>タイトル</h1>
-            <nav>
-                <ul>
-                    <li><a href="#">新規登録</a></li>
-                    <li><a href="#">ログイン</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <main>
-        <section class="main-content">
-            <h2>サービス概要</h2>
-            <h3>使い方</h3>
-            <div class="buttons">
-                <button class="btn">新規登録</button>
-                <button class="btn">ログイン</button>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <ul>
-            <li><a href="#">利用規約</a></li>
-            <li><a href="#">プライバシーポリシー</a></li>
-            <li><a href="#">お問い合わせ</a></li>
-        </ul>
-    </footer>
+<body class="bg-gray-100 flex flex-col min-h-screen">
+
+  <!-- ヘッダー -->
+  <header class="bg-teal-600 text-white p-4 flex justify-between items-center">
+    <h1 class="text-xl font-bold">タイトル</h1>
+    <nav>
+      <a href="/signup" class="mr-4 hover:underline">新規登録</a>
+      <a href="/login" class="hover:underline">ログイン</a>
+    </nav>
+  </header>
+
+  <!-- メインコンテンツ -->
+  <main class="flex-grow text-center py-10">
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4">サービス概要</h2>
+       <p class="text-lg">感謝の木は、感謝の気持ちを伝えるためのサービスです。</p>
+      <p class="text-lg">使い方</p>
+    </section>
+
+    <section class="flex justify-center space-x-4">
+      <a href="/signup" class="bg-teal-600 text-black py-2 px-4 rounded-lg hover:bg-teal-700 transition duration-300">新規登録</a>
+      <a href="/login" class="bg-teal-600 text-black py-2 px-4 rounded-lg hover:bg-teal-700 transition duration-300">ログイン</a>
+    </section>
+  </main>
+
+  <!-- フッター -->
+  <footer class="bg-gray-800 text-white text-center py-4">
+    <nav class="flex justify-center space-x-4">
+      <a href="/terms" class="hover:underline">利用規約</a>
+      <a href="/privacy" class="hover:underline">プライバシーポリシー</a>
+      <a href="/contact" class="hover:underline">お問い合わせ</a>
+    </nav>
+  </footer>
+
 </body>
 </html>
 
