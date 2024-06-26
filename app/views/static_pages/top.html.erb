@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ありがとうツリー</title>
+  <%= stylesheet_link_tag 'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+</head>
+<body class="bg-gray-100">
+  <header class="bg-teal-600 text-black shadow">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-3xl font-bold">タイトル</h1>
+      <div>
+        <a href="#" class="mr-4">新規登録</a>
+        <a href="#">ログイン</a>
+      </div>
+    </div>
+  </header>
+  <main class="container mx-auto px-6 py-4 text-center">
+    <div class="bg-white p-6 rounded-lg shadow-md">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4">サービス概要</h2>
+      <p class="text-gray-700 mb-4">ユーザーが日々の感謝の気持ちを視覚的に表現し、記録するためのウェブアプリケーションです。</p>
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4">使い方</h2>
+      <div class="flex justify-center mt-6">
+        <a href="#" class="bg-teal-500 text-black px-4 py-2 rounded mr-2">新規登録</a>
+        <a href="#" class="bg-teal-500 text-black px-4 py-2 rounded">ログイン</a>
+      </div>
+    </div>
+  </main>
+  <footer class="bg-teal-600 text-black mt-8">
+    <div class="container mx-auto px-6 py-4 flex justify-between">
+      <a href="#">利用規約</a>
+      <a href="#">プライバシーポリシー</a>
+      <a href="#">お問い合わせ</a>
+    </div>
+  </footer>
+</body>
+</html>
+
+
